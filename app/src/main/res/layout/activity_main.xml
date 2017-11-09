@@ -1,40 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-tools:context="com.example.marwa.mothersdaycard.MainActivity">
-
-<ImageView
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:scaleType="centerCrop"
-    android:src="@drawable/mother"
-    tools:ignore="ContentDescription" />
+    tools:context="com.example.marwa.mothersdaycard.MainActivity">
 
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:fontFamily="casual"
-    android:padding="16dp"
-    android:text="@string/receiver"
-    android:textColor="#580264"
-    android:textSize="32sp"
-    android:textStyle="bold"
-    tools:targetApi="jelly_bean" />
+    <!-- Background of the Card -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mother"
+        android:contentDescription="@string/card" />
 
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentBottom="true"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentEnd="true"
-    android:fontFamily="casual"
-    android:padding="16dp"
-    android:text="@string/sender"
-    android:textColor="#580264"
-    android:textSize="32sp"
-    android:textStyle="bold"
-    tools:targetApi="jelly_bean" />
+    <!-- Receiver's name -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:padding="16dp"
+        android:text="@string/receiver"
+        android:textColor="#580264"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        tools:targetApi="jelly_bean" />
+
+    <!-- Sender's name -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:fontFamily="casual"
+        android:padding="16dp"
+        android:text="@string/sender"
+        android:textColor="#580264"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        tools:targetApi="jelly_bean" />
 
 </RelativeLayout>

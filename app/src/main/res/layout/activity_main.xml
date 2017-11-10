@@ -9,35 +9,24 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:contentDescription="@string/card"
         android:scaleType="centerCrop"
-        android:src="@drawable/mother"
-        android:contentDescription="@string/card" />
+        android:src="@drawable/mother" />
 
     <!-- Receiver's name -->
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="casual"
-        android:padding="16dp"
+        style="@style/TextStyle"
+        android:padding="@dimen/padding_portrait"
         android:text="@string/receiver"
-        android:textColor="#580264"
-        android:textSize="32sp"
-        android:textStyle="bold"
-        tools:targetApi="jelly_bean" />
+        android:textSize="@dimen/text_size_portrait" />
 
     <!-- Sender's name -->
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/TextStyle"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:fontFamily="casual"
-        android:padding="16dp"
+        android:padding="@dimen/padding_portrait"
         android:text="@string/sender"
-        android:textColor="#580264"
-        android:textSize="32sp"
-        android:textStyle="bold"
-        tools:targetApi="jelly_bean" />
-
+        android:textSize="@dimen/text_size_portrait" />
 </RelativeLayout>

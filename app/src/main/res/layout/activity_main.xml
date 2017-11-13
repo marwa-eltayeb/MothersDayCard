@@ -15,18 +15,14 @@
 
     <!-- Receiver's name -->
     <TextView
-        style="@style/TextStyle"
-        android:padding="@dimen/padding_portrait"
-        android:text="@string/receiver"
-        android:textSize="@dimen/text_size_portrait" />
+        style="@style/text_portrait"
+        android:text="@string/receiver" />
 
     <!-- Sender's name -->
     <TextView
-        style="@style/TextStyle"
+        style="@style/text_portrait"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:padding="@dimen/padding_portrait"
-        android:text="@string/sender"
-        android:textSize="@dimen/text_size_portrait" />
+        android:text="@string/sender" />
 </RelativeLayout>

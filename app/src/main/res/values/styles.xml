@@ -9,14 +9,18 @@
     </style>
 
 
-    <!-- Style for text -->
-    <style name="TextStyle">
+    <!-- Style for text (Portrait) -->
+    <style name="text_portrait">
+        <item name="android:padding">@dimen/padding_portrait</item>
+        <item name="android:textSize">@dimen/text_size_portrait</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@color/text_color</item>
         <item name="android:textStyle">bold</item>
         <item name="android:fontFamily" tools:targetApi="jelly_bean">casual</item>
     </style>
+
+
 
 
 </resources>
